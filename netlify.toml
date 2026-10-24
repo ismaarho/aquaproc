@@ -1,0 +1,42 @@
+[build]
+  publish = "."
+
+# Rutas cortas para las páginas legales
+[[redirects]]
+  from = "/privacidad"
+  to = "/legal/privacidad.html"
+  status = 301
+[[redirects]]
+  from = "/aviso-legal"
+  to = "/legal/aviso-legal.html"
+  status = 301
+[[redirects]]
+  from = "/cookies"
+  to = "/legal/cookies.html"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://plausible.io; connect-src 'self' https://plausible.io https://formspree.io; img-src 'self' data:; style-src 'self'; font-src 'self'; form-action 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
