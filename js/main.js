@@ -101,12 +101,12 @@
     var tenOut = calc.querySelector("#calc-ten");
     var bottlesOut = calc.querySelector("#calc-bottles");
     var litresOut = calc.querySelector("#calc-litres");
-    var fmtEur = new Intl.NumberFormat("es-ES", {
-      style: "currency",
-      currency: "EUR",
-      maximumFractionDigits: 0
-    });
-    var fmtNum = new Intl.NumberFormat("es-ES", { maximumFractionDigits: 0 });
+    // Separador de miles siempre (es-ES omite el punto en cifras de 4 dígitos).
+    var group = function (n) {
+      return String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    };
+    var fmtEur = { format: function (n) { return group(n) + " €"; } };
+    var fmtNum = { format: group };
     var calcTracked = false;
 
     var update = function () {
