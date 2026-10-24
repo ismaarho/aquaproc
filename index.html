@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aquaproc · Agua pura en casa, sin garrafas</title>
+<meta name="description" content="Ósmosis inversa y ozono para tu hogar. Agua de calidad directamente del grifo, sin garrafas y con ahorro cada mes. Demo gratuita en tu casa, sin compromiso.">
+<link rel="canonical" href="https://aquaproc.com/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Aquaproc">
+<meta property="og:title" content="Agua pura en casa. Sin garrafas.">
+<meta property="og:description" content="Ósmosis inversa y ozono para tu hogar. Demo gratuita en tu casa, sin compromiso.">
+<meta property="og:url" content="https://aquaproc.com/">
+<meta property="og:image" content="https://aquaproc.com/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo de Aquaproc y equipo de ósmosis Hydriva">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Agua pura en casa. Sin garrafas.">
+<meta name="twitter:description" content="Ósmosis inversa y ozono para tu hogar. Demo gratuita en tu casa, sin compromiso.">
+<meta name="twitter:image" content="https://aquaproc.com/img/og.jpg">
+
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preload" href="/fonts/inter-semibold.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/fonts/inter-regular.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="/img/hydriva.avif" as="image" type="image/avif" fetchpriority="high">
+<link rel="stylesheet" href="/css/style.css">
+
+<!-- Analítica sin cookies. Crea el sitio en plausible.io con el dominio aquaproc.com. -->
+<script defer data-domain="aquaproc.com" src="https://plausible.io/js/script.js"></script>
+<!-- Alternativa GA4 (requiere banner de cookies y consentimiento previo):
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+-->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://aquaproc.com/#business",
+      "name": "Aquaproc",
+      "url": "https://aquaproc.com/",
+      "logo": "https://aquaproc.com/img/logo.png",
+      "image": "https://aquaproc.com/img/og.jpg",
+      "description": "Venta e instalación de sistemas de ósmosis inversa y ozono para el hogar. Distribuidor oficial Aquaresa.",
+      "telephone": "+34638429189",
+      "sameAs": ["https://www.instagram.com/aquaproc"],
+      "areaServed": [
+        { "@type": "AdministrativeArea", "name": "Cataluña" },
+        { "@type": "Country", "name": "España" }
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "19:30"
+      },
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "ES",
+        "addressRegion": "Cataluña"
+      }
+    },
+    {
+      "@type": "Product",
+      "name": "Hydriva Mini",
+      "brand": { "@type": "Brand", "name": "Aquaresa" },
+      "description": "Ósmosis inversa compacta. 1,83 L/min, filtración de 0,0001 µm, 4.000 L de capacidad.",
+      "image": "https://aquaproc.com/img/hydriva-mini.png",
+      "url": "https://aquaproc.com/#hydriva-mini"
+    },
+    {
+      "@type": "Product",
+      "name": "Hydriva",
+      "brand": { "@type": "Brand", "name": "Aquaresa" },
+      "description": "Ósmosis inversa para el hogar. 2,6 L/min, filtración de 0,0001 µm, 4.000 L de capacidad.",
+      "image": "https://aquaproc.com/img/hydriva.png",
+      "url": "https://aquaproc.com/#hydriva"
+    },
+    {
+      "@type": "Product",
+      "name": "Hydriva Pro",
+      "brand": { "@type": "Brand", "name": "Aquaresa" },
+      "description": "Ósmosis inversa con agua hidrogenada hasta 1.600 ppb. 1,6 L/min, filtración de 0,0001 µm.",
+      "image": "https://aquaproc.com/img/hydriva-pro.png",
+      "url": "https://aquaproc.com/#hydriva-pro"
+    },
+    {
+      "@type": "Product",
+      "name": "Hydrion",
+      "brand": { "@type": "Brand", "name": "Aquaresa" },
+      "description": "Ósmosis inversa profesional. 3,15 L/min, 25.000 L de capacidad.",
+      "image": "https://aquaproc.com/img/hydrion.png",
+      "url": "https://aquaproc.com/#mas-soluciones"
+    },
+    {
+      "@type": "Product",
+      "name": "Smarto",
+      "brand": { "@type": "Brand", "name": "Aquaresa" },
+      "description": "Sistema de ozono para el hogar. Limpieza y desinfección sin productos químicos.",
+      "image": "https://aquaproc.com/img/smarto.png",
+      "url": "https://aquaproc.com/#mas-soluciones"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Qué elimina la ósmosis inversa?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Filtra el agua a través de una membrana de 0,0001 µm, reteniendo cal, metales pesados, microplásticos y otras impurezas. El resultado es un agua de sabor limpio y neutro." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿La instalación requiere obras?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Nuestro equipo conecta el sistema a tu instalación existente de forma limpia y rápida, sin obras." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cómo es la demostración gratuita?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Vamos a tu casa, analizamos la calidad de tu agua y te enseñamos el equipo funcionando. Es gratis y sin compromiso de compra." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué mantenimiento necesita?",
+          "acceptedAnswer": { "@type": "Answer", "text": "La sustitución periódica de los filtros. Te avisamos cuando toca y te damos soporte para que el equipo funcione siempre bien." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿En qué zonas trabajáis?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Instalamos en toda España, principalmente en Cataluña. Escríbenos con tu código postal y te confirmamos fecha." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="nav-logo" href="#inicio" aria-label="Aquaproc, inicio">
+      <picture>
+        <source srcset="/img/logo.avif" type="image/avif">
+        <source srcset="/img/logo.webp" type="image/webp">
+        <img src="/img/logo.png" width="438" height="130" alt="" decoding="async">
+      </picture>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menú">
+      <span></span><span></span>
+    </button>
+    <nav aria-label="Principal">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hydriva">Productos</a></li>
+        <li><a href="#comparar">Comparar</a></li>
+        <li><a href="#ahorro">Ahorro</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li class="nav-cta"><a class="btn btn-sm" href="#demo">Solicita tu demo</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="wrap">
+    <h1 class="t-display" id="hero-title">Agua pura.<br>Sin garrafas.</h1>
+    <p class="t-intro">Ósmosis inversa y ozono para tu hogar. Agua de calidad directamente del grifo, con menos plástico y ahorro cada mes.</p>
+    <div class="cta-row">
+      <a class="btn" href="#demo">Solicita tu demo gratuita</a>
+      <a class="link" href="#hydriva">Ver productos</a>
+    </div>
+  </div>
+  <div class="hero-media" aria-hidden="true">
+    <picture>
+      <source srcset="/img/hydriva-mini.avif" type="image/avif">
+      <source srcset="/img/hydriva-mini.webp" type="image/webp">
+      <img class="is-mini" src="/img/hydriva-mini.png" width="149" height="370" alt="" decoding="async">
+    </picture>
+    <picture>
+      <source srcset="/img/hydriva.avif" type="image/avif">
+      <source srcset="/img/hydriva.webp" type="image/webp">
+      <img src="/img/hydriva.png" width="203" height="480" alt="" fetchpriority="high">
+    </picture>
+    <picture>
+      <source srcset="/img/hydriva-pro.avif" type="image/avif">
+      <source srcset="/img/hydriva-pro.webp" type="image/webp">
+      <img class="is-pro" src="/img/hydriva-pro.png" width="284" height="480" alt="" decoding="async">
+    </picture>
+  </div>
+</section>
+
+<!-- ================= POR QUÉ ================= -->
+<section class="section section-alt" id="por-que" aria-labelledby="why-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="why-title">El agua del grifo no siempre es lo que parece.</h2>
+      <p class="t-intro muted">Cal, cloro, metales pesados y microplásticos pueden estar en el agua que bebes y con la que cocinas cada día.</p>
+    </div>
+    <div class="reasons">
+      <div class="reason reveal">
+        <div class="big">0,0001 µm</div>
+        <h3>Agua más pura</h3>
+        <p>La membrana de ósmosis inversa retiene hasta las partículas más pequeñas. Sabor limpio y neutro.</p>
+      </div>
+      <div class="reason reveal">
+        <div class="big">0 garrafas</div>
+        <h3>Adiós al plástico</h3>
+        <p>Dejas de comprar, cargar y almacenar garrafas. Menos residuos en casa y en el planeta.</p>
+      </div>
+      <div class="reason reveal">
+        <div class="big">Cada mes</div>
+        <h3>Ahorro real</h3>
+        <p>El agua embotellada es un gasto que no termina. Con un sistema propio, desaparece.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= HYDRIVA MINI ================= -->
+<section class="section product" id="hydriva-mini" aria-labelledby="mini-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="t-eyebrow">Hydriva Mini</p>
+      <h2 class="t-headline" id="mini-title">El primer paso sin garrafas.</h2>
+      <p class="t-intro">Compacto, sin obras. Para hogares pequeños o para empezar a beber agua purificada del grifo.</p>
+      <div class="cta-row">
+        <a class="btn" href="#demo">Solicita tu demo gratuita</a>
+        <a class="link" href="#comparar">Comparar modelos</a>
+      </div>
+    </div>
+    <div class="product-media reveal">
+      <picture>
+        <source srcset="/img/hydriva-mini.avif" type="image/avif">
+        <source srcset="/img/hydriva-mini.webp" type="image/webp">
+        <img src="/img/hydriva-mini.png" width="149" height="370" alt="Hydriva Mini, equipo de ósmosis inversa compacto en blanco" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <ul class="specs reveal">
+      <li class="spec"><span class="v">1,83 L</span><span class="k">por minuto</span></li>
+      <li class="spec"><span class="v">0,0001 µm</span><span class="k">filtración</span></li>
+      <li class="spec"><span class="v">4.000 L</span><span class="k">capacidad de filtro</span></li>
+      <li class="spec"><span class="v">CE</span><span class="k">certificación</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= HYDRIVA ================= -->
+<section class="section section-alt product" id="hydriva" aria-labelledby="hydriva-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="t-eyebrow">Hydriva</p>
+      <h2 class="t-headline" id="hydriva-title">El equilibrio para el hogar.</h2>
+      <p class="t-intro">Para familias de 2 a 5 personas. La mejor relación entre caudal, calidad y precio.</p>
+      <div class="cta-row">
+        <a class="btn" href="#demo">Solicita tu demo gratuita</a>
+        <a class="link" href="#comparar">Comparar modelos</a>
+      </div>
+    </div>
+    <div class="product-media reveal">
+      <picture>
+        <source srcset="/img/hydriva.avif" type="image/avif">
+        <source srcset="/img/hydriva.webp" type="image/webp">
+        <img src="/img/hydriva.png" width="203" height="480" alt="Hydriva, equipo de ósmosis inversa para el hogar en negro" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <ul class="specs reveal">
+      <li class="spec"><span class="v">2,6 L</span><span class="k">por minuto</span></li>
+      <li class="spec"><span class="v">0,0001 µm</span><span class="k">filtración</span></li>
+      <li class="spec"><span class="v">4.000 L</span><span class="k">capacidad de filtro</span></li>
+      <li class="spec"><span class="v">2–5</span><span class="k">personas</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= HYDRIVA PRO (negro) ================= -->
+<section class="section section-dark product" id="hydriva-pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="t-eyebrow">Hydriva Pro</p>
+      <h2 class="t-headline" id="pro-title">Agua hidrogenada.<br>El máximo nivel.</h2>
+      <p class="t-intro">Hidrógeno disuelto hasta 1.600 ppb y la filtración más fina de la gama. Para quien quiere lo mejor.</p>
+      <div class="cta-row">
+        <a class="btn btn-on-dark" href="#demo">Solicita tu demo gratuita</a>
+        <a class="link" href="#comparar">Comparar modelos</a>
+      </div>
+    </div>
+    <div class="product-media reveal">
+      <picture>
+        <source srcset="/img/hydriva-pro.avif" type="image/avif">
+        <source srcset="/img/hydriva-pro.webp" type="image/webp">
+        <img src="/img/hydriva-pro.png" width="284" height="480" alt="Hydriva Pro, equipo de ósmosis inversa con hidrógeno, en azul oscuro" loading="lazy" decoding="async">
+      </picture>
+    </div>
+    <ul class="specs reveal">
+      <li class="spec"><span class="v">1.600 ppb</span><span class="k">hidrógeno disuelto</span></li>
+      <li class="spec"><span class="v">0,0001 µm</span><span class="k">filtración</span></li>
+      <li class="spec"><span class="v">1,6 L</span><span class="k">por minuto</span></li>
+      <li class="spec"><span class="v">CE</span><span class="k">certificación</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= MÁS SOLUCIONES ================= -->
+<section class="section" id="mas-soluciones" aria-labelledby="more-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="more-title">Más soluciones.</h2>
+      <p class="t-intro muted">Para negocios con alto consumo y para un hogar sin químicos.</p>
+    </div>
+    <div class="grid-2 solutions">
+      <article class="card solution reveal">
+        <div class="solution-media">
+          <picture>
+            <source srcset="/img/hydrion.avif" type="image/avif">
+            <source srcset="/img/hydrion.webp" type="image/webp">
+            <img src="/img/hydrion.png" width="313" height="304" alt="Hydrion, dos filtros profesionales de ósmosis inversa" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <h3>Hydrion</h3>
+        <p class="tag">Ósmosis profesional para restaurantes, hoteles, colegios y oficinas.</p>
+        <div class="spec"><span class="v">25.000 L</span><span class="k">capacidad · 3,15 L/min</span></div>
+        <a class="link" href="#demo">Pedir información</a>
+      </article>
+      <article class="card solution reveal">
+        <div class="solution-media">
+          <picture>
+            <source srcset="/img/smarto.avif" type="image/avif">
+            <source srcset="/img/smarto.webp" type="image/webp">
+            <img src="/img/smarto.png" width="568" height="336" alt="Smarto, sistema de ozono Aquaresa con panel táctil" loading="lazy" decoding="async">
+          </picture>
+        </div>
+        <h3>Smarto</h3>
+        <p class="tag">Limpieza y desinfección con ozono. Sin residuos químicos, sin olores.</p>
+        <div class="spec"><span class="v">−80 %</span><span class="k">de productos químicos en casa*</span></div>
+        <a class="link" href="#demo">Pedir información</a>
+      </article>
+    </div>
+    <p class="t-caption muted center" style="margin-top:20px">* Reducción orientativa según el fabricante. Depende del uso.</p>
+  </div>
+</section>
+
+<!-- ================= COMPARAR MODELOS ================= -->
+<section class="section section-alt" id="comparar" aria-labelledby="compare-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="compare-title">¿Qué Hydriva es para ti?</h2>
+      <p class="t-intro muted">Tres equipos, una misma filtración. Elige por caudal y por lo que esperas del agua.</p>
+    </div>
+    <div class="compare-scroll reveal">
+      <div class="compare">
+        <article class="compare-col">
+          <div class="cmedia">
+            <picture>
+              <source srcset="/img/hydriva-mini.avif" type="image/avif">
+              <source srcset="/img/hydriva-mini.webp" type="image/webp">
+              <img src="/img/hydriva-mini.png" width="149" height="370" alt="" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <h3>Hydriva Mini</h3>
+          <p class="tag">Compacto. Para empezar.</p>
+          <a class="btn btn-sm" href="#demo">Solicita tu demo</a>
+          <dl>
+            <div class="row"><dt>Caudal</dt><dd>1,83 L/min</dd></div>
+            <div class="row"><dt>Filtración</dt><dd>0,0001 µm</dd></div>
+            <div class="row"><dt>Capacidad de filtro</dt><dd>4.000 L</dd></div>
+            <div class="row"><dt>Agua hidrogenada</dt><dd class="small">—</dd></div>
+            <div class="row"><dt>Ideal para</dt><dd class="small">1–2 personas</dd></div>
+          </dl>
+        </article>
+        <article class="compare-col">
+          <div class="cmedia">
+            <picture>
+              <source srcset="/img/hydriva.avif" type="image/avif">
+              <source srcset="/img/hydriva.webp" type="image/webp">
+              <img src="/img/hydriva.png" width="203" height="480" alt="" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <h3>Hydriva</h3>
+          <p class="tag">El más elegido. Para la familia.</p>
+          <a class="btn btn-sm" href="#demo">Solicita tu demo</a>
+          <dl>
+            <div class="row"><dt>Caudal</dt><dd>2,6 L/min</dd></div>
+            <div class="row"><dt>Filtración</dt><dd>0,0001 µm</dd></div>
+            <div class="row"><dt>Capacidad de filtro</dt><dd>4.000 L</dd></div>
+            <div class="row"><dt>Agua hidrogenada</dt><dd class="small">—</dd></div>
+            <div class="row"><dt>Ideal para</dt><dd class="small">2–5 personas</dd></div>
+          </dl>
+        </article>
+        <article class="compare-col">
+          <div class="cmedia">
+            <picture>
+              <source srcset="/img/hydriva-pro.avif" type="image/avif">
+              <source srcset="/img/hydriva-pro.webp" type="image/webp">
+              <img src="/img/hydriva-pro.png" width="284" height="480" alt="" loading="lazy" decoding="async">
+            </picture>
+          </div>
+          <h3>Hydriva Pro</h3>
+          <p class="tag">Agua hidrogenada. Lo mejor.</p>
+          <a class="btn btn-sm" href="#demo">Solicita tu demo</a>
+          <dl>
+            <div class="row"><dt>Caudal</dt><dd>1,6 L/min</dd></div>
+            <div class="row"><dt>Filtración</dt><dd>0,0001 µm</dd></div>
+            <div class="row"><dt>Capacidad de filtro</dt><dd class="small">Consultar</dd></div>
+            <div class="row"><dt>Agua hidrogenada</dt><dd>1.600 ppb</dd></div>
+            <div class="row"><dt>Ideal para</dt><dd class="small">Quien busca el máximo</dd></div>
+          </dl>
+        </article>
+      </div>
+    </div>
+    <p class="t-caption muted center" style="margin-top:20px">Todos los equipos cuentan con certificación CE. Instalación profesional incluida en la visita.</p>
+  </div>
+</section>
+
+<!-- ================= AHORRO ================= -->
+<section class="section" id="ahorro" aria-labelledby="calc-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="calc-title">Calcula lo que te cuestan las garrafas.</h2>
+      <p class="t-intro muted">Mueve los controles con tu consumo real. El resultado se actualiza al instante.</p>
+    </div>
+    <div class="calc reveal" id="calc">
+      <div class="card calc-inputs">
+        <div class="field">
+          <label for="calc-qty">Garrafas de 8 L que compras a la semana</label>
+          <div class="field-row">
+            <input type="range" id="calc-qty" min="1" max="20" step="1" value="4" aria-describedby="calc-qty-out">
+            <output id="calc-qty-out" for="calc-qty">4</output>
+          </div>
+        </div>
+        <div class="field">
+          <label for="calc-price">Precio de cada garrafa</label>
+          <div class="input-money">
+            <input class="input" type="text" inputmode="decimal" id="calc-price" value="1,90" aria-describedby="calc-price-hint" autocomplete="off">
+          </div>
+          <span class="hint" id="calc-price-hint">Precio habitual en supermercado: entre 1,50 € y 2,50 €.</span>
+        </div>
+      </div>
+      <div class="card calc-result" aria-live="polite">
+        <div class="big" id="calc-year">395 €</div>
+        <div class="big-label">al año en garrafas</div>
+        <div class="secondary">
+          <div><div class="v" id="calc-ten">3.950 €</div><div class="k">en 10 años</div></div>
+          <div><div class="v" id="calc-bottles">208</div><div class="k">garrafas al año</div></div>
+          <div><div class="v" id="calc-litres">1.664 L</div><div class="k">de agua cargada</div></div>
+        </div>
+      </div>
+    </div>
+    <p class="calc-note t-caption">
+      Cálculo: garrafas por semana × precio × 52 semanas. No incluye el coste del equipo ni de los filtros.
+      <!-- TODO (Ismael): si quieres mostrar precio, añade aquí "Equipos desde X €" y, si lo tienes, el coste anual de filtros para calcular el ahorro neto. -->
+    </p>
+    <div class="cta-row reveal" style="margin-top:32px">
+      <a class="btn" href="#demo">Solicita tu demo gratuita</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CÓMO FUNCIONA ================= -->
+<section class="section section-alt" id="como-funciona" aria-labelledby="how-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="how-title">Sencillo de principio a fin.</h2>
+      <p class="t-intro muted">Sin obras ni esperas. En cuatro pasos tienes agua de calidad en casa.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><h3>Solicitas tu demo</h3><p>Nos escribes y agendamos una visita gratuita cuando mejor te venga.</p></li>
+      <li class="step reveal"><h3>Analizamos tu agua</h3><p>En tu casa medimos la calidad del agua y ves el equipo funcionando.</p></li>
+      <li class="step reveal"><h3>Instalamos</h3><p>Nuestro equipo conecta el sistema de forma limpia y rápida, sin obras.</p></li>
+      <li class="step reveal"><h3>Disfrutas del agua</h3><p>Agua pura del grifo, con soporte y aviso cuando toca cambiar filtros.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= PRUEBA SOCIAL ================= -->
+<section class="section" id="opiniones" aria-labelledby="social-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="social-title">Lo que dicen quienes ya beben del grifo.</h2>
+    </div>
+    <!-- TODO (Ismael): sustituir los tres placeholders por testimonios reales (texto, nombre, localidad) con permiso del cliente. No inventar nombres. -->
+    <div class="grid-3 testimonials">
+      <figure class="card testimonial is-placeholder reveal">
+        <blockquote>[TESTIMONIO PENDIENTE] Dos o tres frases del cliente sobre el cambio: sabor, comodidad, ahorro.</blockquote>
+        <figcaption>[Nombre], [localidad] · Hydriva</figcaption>
+      </figure>
+      <figure class="card testimonial is-placeholder reveal">
+        <blockquote>[TESTIMONIO PENDIENTE] Dos o tres frases del cliente sobre la demo y la instalación.</blockquote>
+        <figcaption>[Nombre], [localidad] · Hydriva Pro</figcaption>
+      </figure>
+      <figure class="card testimonial is-placeholder reveal">
+        <blockquote>[TESTIMONIO PENDIENTE] Dos o tres frases de un negocio (restaurante, oficina) sobre el equipo profesional.</blockquote>
+        <figcaption>[Nombre del negocio], [localidad] · Hydrion</figcaption>
+      </figure>
+    </div>
+    <div class="partners reveal">
+      <p>Distribuidor oficial</p>
+      <div class="partner-row">
+        <!-- TODO (Ismael): sustituir por el logotipo oficial de Aquaresa (SVG o PNG) con su autorización. -->
+        <span class="partner">[LOGO AQUARESA]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEMO / FORMULARIO ================= -->
+<section class="section section-alt" id="demo" aria-labelledby="demo-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="demo-title">Solicita tu demo gratuita.</h2>
+      <p class="t-intro muted">Llevamos el equipo a tu casa, analizamos tu agua y ves la diferencia. Sin coste y sin compromiso.</p>
+    </div>
+
+    <form class="form reveal" id="demo-form" action="https://formspree.io/f/xbdvjgle" method="POST" novalidate>
+      <div class="form-grid">
+        <div class="field span-2">
+          <label for="f-nombre">Nombre</label>
+          <input class="input" type="text" id="f-nombre" name="nombre" autocomplete="name" required aria-describedby="e-nombre">
+          <span class="error-msg" id="e-nombre" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="f-telefono">Teléfono</label>
+          <input class="input" type="tel" id="f-telefono" name="telefono" autocomplete="tel" inputmode="tel" required aria-describedby="e-telefono">
+          <span class="error-msg" id="e-telefono" role="alert"></span>
+        </div>
+        <div class="field">
+          <label for="f-cp">Código postal</label>
+          <input class="input" type="text" id="f-cp" name="cp" autocomplete="postal-code" inputmode="numeric" maxlength="5" required aria-describedby="e-cp h-cp">
+          <span class="hint" id="h-cp">Para confirmar que llegamos a tu zona.</span>
+          <span class="error-msg" id="e-cp" role="alert"></span>
+        </div>
+        <div class="field span-2">
+          <label for="f-email">Email <span class="muted">(opcional)</span></label>
+          <input class="input" type="email" id="f-email" name="email" autocomplete="email" aria-describedby="e-email">
+          <span class="error-msg" id="e-email" role="alert"></span>
+        </div>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" name="consentimiento" value="si" required>
+        <span>
+          He leído la <a href="/legal/privacidad.html">política de privacidad</a> y acepto que Aquaproc use mis datos para contactarme y organizar la demostración.
+          Responsable: <mark>[RELLENAR razón social]</mark>. Finalidad: gestionar tu solicitud. Derechos: acceso, rectificación y supresión escribiendo a <mark>[RELLENAR email]</mark>.
+          <span class="error-msg" role="alert"></span>
+        </span>
+      </label>
+
+      <!-- Honeypot: los humanos no lo ven; los bots lo rellenan. -->
+      <div class="hp" aria-hidden="true">
+        <label for="f-web">Web de tu empresa</label>
+        <input type="text" id="f-web" name="empresa_web" tabindex="-1" autocomplete="off">
+      </div>
+      <input type="hidden" name="_subject" value="Nueva solicitud de demo — aquaproc.com">
+
+      <div class="form-actions">
+        <button class="btn btn-lg" type="submit"><span class="spinner" aria-hidden="true"></span><span class="label">Solicitar demo gratuita</span></button>
+        <p class="form-status" aria-live="polite"></p>
+      </div>
+    </form>
+
+    <div class="form-success" id="form-success" role="status">
+      <h3>Solicitud recibida.</h3>
+      <p>Te llamamos en horario de lunes a sábado, de 9:00 a 19:30, para fijar el día de la visita.</p>
+    </div>
+
+    <p class="alt-contact reveal">
+      ¿Prefieres hablar ahora?
+      <a href="https://wa.me/34638429189?text=Hola%2C%20quiero%20solicitar%20una%20demostraci%C3%B3n%20gratuita%20de%20Aquaproc" target="_blank" rel="noopener" data-place="demo">Escríbenos por WhatsApp</a>
+      o llama al <a href="tel:+34638429189" data-place="demo">638 42 91 89</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="section" id="faq" aria-labelledby="faq-title">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="t-headline" id="faq-title">Preguntas frecuentes.</h2>
+    </div>
+    <div class="faq reveal">
+      <details>
+        <summary>¿Qué elimina la ósmosis inversa?</summary>
+        <div class="answer">Filtra el agua a través de una membrana de 0,0001 µm, reteniendo cal, metales pesados, microplásticos y otras impurezas. El resultado es un agua de sabor limpio y neutro.</div>
+      </details>
+      <details>
+        <summary>¿La instalación requiere obras?</summary>
+        <div class="answer">No. Nuestro equipo conecta el sistema a tu instalación existente de forma limpia y rápida, sin obras.</div>
+      </details>
+      <details>
+        <summary>¿Cómo es la demostración gratuita?</summary>
+        <div class="answer">Vamos a tu casa, analizamos la calidad de tu agua y te enseñamos el equipo funcionando. Es gratis y sin compromiso de compra.</div>
+      </details>
+      <details>
+        <summary>¿Qué mantenimiento necesita?</summary>
+        <div class="answer">La sustitución periódica de los filtros. Te avisamos cuando toca y te damos soporte para que el equipo funcione siempre bien.</div>
+      </details>
+      <details>
+        <summary>¿En qué zonas trabajáis?</summary>
+        <div class="answer">Instalamos en toda España, principalmente en Cataluña. Escríbenos con tu código postal y te confirmamos fecha.</div>
+      </details>
+      <details>
+        <summary>¿Cuánto cuesta un equipo?</summary>
+        <!-- TODO (Ismael): rellenar con el rango real o con la política de precios ("te damos precio cerrado en la demo"). -->
+        <div class="answer"><mark>[RELLENAR]</mark> Depende del modelo y de tu instalación. En la demostración te damos un precio cerrado, sin sorpresas.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <ul class="footer-nav">
+        <li><a href="#hydriva-mini">Hydriva Mini</a></li>
+        <li><a href="#hydriva">Hydriva</a></li>
+        <li><a href="#hydriva-pro">Hydriva Pro</a></li>
+        <li><a href="#mas-soluciones">Hydrion y Smarto</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="https://wa.me/34638429189" target="_blank" rel="noopener" data-place="footer">WhatsApp</a></li>
+        <li><a href="tel:+34638429189" data-place="footer">638 42 91 89</a></li>
+        <li><a href="https://www.instagram.com/aquaproc" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Aquaproc · Distribuidor oficial Aquaresa</span>
+      <ul class="footer-nav">
+        <li><a href="/legal/aviso-legal.html">Aviso legal</a></li>
+        <li><a href="/legal/privacidad.html">Privacidad</a></li>
+        <li><a href="/legal/cookies.html">Cookies</a></li>
+      </ul>
+    </div>
+    <p class="footer-legal"><mark>[RELLENAR razón social]</mark> · NIF <mark>[RELLENAR]</mark> · <mark>[RELLENAR dirección]</mark> · <mark>[RELLENAR email]</mark></p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/34638429189?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Aquaproc" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" data-place="flotante">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.5 12.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3Z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
