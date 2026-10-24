@@ -20,7 +20,7 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --bg: #ffffff;
   --bg-alt: #f5f5f7;
@@ -54,27 +54,6 @@
   --t-reveal: 600ms;
 }
 
-/* Modo oscuro: solo cuando el sistema lo pide. Las secciones negras no cambian. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #000000;
-    --bg-alt: #161617;
-    --ink: #f5f5f7;
-    --ink-2: #86868b;
-    --line: rgba(255, 255, 255, 0.16);
-    --accent: #2997ff;
-    --accent-hover: #3aa1ff;
-  }
-}
-:root[data-theme="dark"] {
-  --bg: #000000;
-  --bg-alt: #161617;
-  --ink: #f5f5f7;
-  --ink-2: #86868b;
-  --line: rgba(255, 255, 255, 0.16);
-  --accent: #2997ff;
-  --accent-hover: #3aa1ff;
-}
 
 /* --------------------------------------------------------------------------
    Base
@@ -373,30 +352,6 @@ button {
   backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--line);
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .nav {
-    background: rgba(0, 0, 0, 0.72);
-  }
-}
-:root[data-theme="dark"] .nav {
-  background: rgba(0, 0, 0, 0.72);
-}
-/* En modo oscuro el logotipo (azul marino) pasa a blanco y la sección
-   negra de Hydriva Pro se distingue del fondo. */
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .nav-logo img {
-    filter: brightness(0) invert(1);
-  }
-  :root:not([data-theme="light"]) .section-dark {
-    background: #1d1d1f;
-  }
-}
-:root[data-theme="dark"] .nav-logo img {
-  filter: brightness(0) invert(1);
-}
-:root[data-theme="dark"] .section-dark {
-  background: #1d1d1f;
-}
 .nav-inner {
   display: flex;
   align-items: center;
@@ -548,6 +503,11 @@ button {
   gap: clamp(24px, 6vw, 72px);
   height: clamp(260px, 40vw, 440px);
 }
+.hero-media picture {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
 .hero-media img {
   height: 100%;
   width: auto;
@@ -560,7 +520,12 @@ button {
   height: 100%;
 }
 @media (max-width: 599px) {
-  .hero-media .is-mini {
+  .hero-media {
+    height: clamp(300px, 92vw, 380px);
+    margin-top: 40px;
+  }
+  .hero-media .is-mini,
+  .hero-media .is-pro {
     display: none;
   }
 }
@@ -622,6 +587,11 @@ button {
   margin: clamp(40px, 6vw, 72px) auto 0;
   height: clamp(300px, 44vw, 520px);
 }
+.product-media picture {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 .product-media img {
   height: 100%;
   width: auto;
@@ -642,8 +612,24 @@ button {
 .spec {
   min-width: 140px;
 }
+@media (max-width: 599px) {
+  .specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 16px;
+    max-width: 340px;
+  }
+  .spec {
+    min-width: 0;
+  }
+  .spec .v {
+    font-size: 28px;
+    white-space: nowrap;
+  }
+}
 .spec .v {
   display: block;
+  white-space: nowrap;
   font-size: clamp(36px, 4.6vw, 48px);
   font-weight: 600;
   letter-spacing: -0.03em;
@@ -1308,12 +1294,6 @@ button {
   opacity: 0;
   pointer-events: none;
   transform: translateY(8px);
-}
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .wa-float {
-    background: #f5f5f7;
-    color: #000;
-  }
 }
 @media (max-width: 599px) {
   .wa-float span {
